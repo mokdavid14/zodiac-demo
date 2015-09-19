@@ -3,7 +3,7 @@
 	"subtitle": "The Ram",
 	"startDate": "0000-03-20",
 	"endDate": "0000-04-20",
-	"icon": "assets/images/greek/aries.jpg",
+	"icon": "assets/images/greek/Aries.jpg",
 	"description": "Aries are creative, adaptive, and insightful. They can also be strong-willed and spontaneous (sometimes to a fault)."
 },
 { 
@@ -11,7 +11,7 @@
 	"subtitle": "The Bull",
 	"startDate": "0000-04-20",
 	"endDate": "0000-05-21",
-	"icon": "assets/images/greek/taurus.jpg",
+	"icon": "assets/images/greek/Taurus.jpg",
 	"description": "Stubborn by nature, Tauruses will stand their ground to the bitter end. But that's okay because the Taurus is also a loving, sympathetic and appreciative sign."
 },
 { 
@@ -19,7 +19,7 @@
 	"subtitle": "The Twins",
 	"startDate": "0000-05-21",
 	"endDate": "0000-06-21",
-	"icon": "assets/images/greek/gemini.jpg",
+	"icon": "assets/images/greek/Gemini.jpg",
 	"description": "Geminis tend to have a duality to their nature, and may be tough to predict how they will react."
 },
 { 
@@ -27,7 +27,7 @@
 	"subtitle": "The Crab",
 	"startDate": "0000-06-21",
 	"endDate": "0000-07-23",
-	"icon": "assets/images/greek/cancer.jpg",
+	"icon": "assets/images/greek/Cancer.jpg",
 	"description": "Cancers love home-life, family and domestic settings. They are traditionalists, and enjoy operating on a fundamental level."
 },
 
@@ -36,7 +36,7 @@
 	"subtitle": "The Lion",
 	"startDate": "0000-07-23",
 	"endDate": "0000-08-23",
-	"icon": "assets/images/greek/leo.jpg",
+	"icon": "assets/images/greek/Leo.jpg",
 	"description": "Leos are natural born leaders, and they will let you know it as they have a tendency to be high-minded and vocal about their opinions."
 },
 { 
@@ -44,7 +44,7 @@
 	"subtitle": "The Maiden",
 	"startDate": "0000-08-23",
 	"endDate": "0000-09-23",
-	"icon": "assets/images/greek/virgo.jpg",
+	"icon": "assets/images/greek/Virgo.jpg",
 	"description": "Virgos have keen minds, and are delightful to chat with, often convincing others of outlandish tales with ease and charm."
 },
 { 
@@ -52,7 +52,7 @@
 	"subtitle": "The Scales",
 	"startDate": "0000-09-23",
 	"endDate": "0000-10-23",
-	"icon": "assets/images/greek/libra.jpg",
+	"icon": "assets/images/greek/Libra.jpg",
 	"description": "Libras have keen intuitions, but often don't give themselves enough credit for their perceptions. They can be quiet and shy if not persuaded to come out of their shell."
 },
 { 	
@@ -60,7 +60,7 @@
 	"subtitle": "The Scorpion",
 	"startDate": "0000-10-23",
 	"endDate": "0000-11-22",
-	"icon": "assets/images/greek/scorpio.jpg",
+	"icon": "assets/images/greek/Scorpio.jpg",
 	"description": "Scorpios are bold and are capable of executing massive enterprises with cool control and confidence, and have unshakable focus when the situation calls for it."
 },
 
@@ -69,7 +69,7 @@
 	"subtitle": "The Archer",
 	"startDate": "0000-11-22",
 	"endDate": "0000-12-22",
-	"icon": "assets/images/greek/sagittarius.jpg",
+	"icon": "assets/images/greek/Sagittarius.jpg",
 	"description": "Sagittarii have great ability for focus, and can be very intense. However, they are not very patient and expect quick results."
 },
 { 
@@ -77,7 +77,7 @@
 	"subtitle": "The Sea-Goat",
 	"startDate": "0000-12-22",
 	"endDate": "0000-01-20",
-	"icon": "assets/images/greek/capricorn.jpg",
+	"icon": "assets/images/greek/Capricorn.jpg",
 	"description": "Capricorns apply their knowledge to practical matters, and strive to maintain stability and order, and make good organizers too."
 },
 { 
@@ -85,7 +85,7 @@
 	"subtitle": "The Water-Bearer",
 	"startDate": "0000-01-20",
 	"endDate": "0000-02-19",
-	"icon": "assets/images/greek/aquarius.jpg",
+	"icon": "assets/images/greek/Aquarius.jpg",
 	"description": "Often simple and unassuming, Aquariuses go about accomplishing goals in quiet, often unorthodox ways, but the results surprisingly effective."
 },
 { 
@@ -93,6 +93,6 @@
 	"subtitle": "The Fish",
 	"startDate": "0000-02-19",
 	"endDate": "0000-03-20",
-	"icon": "assets/images/greek/pisces.jpg",
+	"icon": "assets/images/greek/Pisces.jpg",
 	"description": "Pisces keep an extremely low profile compared to others in the zodiac. They are honest, unselfish, trustworthy and often have quiet dispositions."
 }]
