@@ -1,0 +1,98 @@
+<!-- Birthday Input Form -->
+<div id="sign" class="row">
+  <div class="col-xs-12 text-center">
+
+    <div class="sign-input">
+        <!-- <label class="visible-xs-block">Enter your Birthday (DD-MM-YYYY)</label> -->
+        <!-- <label class="hidden-xs">Enter your Birthday</label> -->
+        <label class="">Enter your Birthday</label>
+        <form class="form-inline">
+            <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-addon hidden-xs">D</div>
+                  <input class="form-control" type="number" ng-model="selectedDay" min="1" max="31" placeholder="DD" ng-keypress="divine($event)" autofocus>
+                </div>
+
+                <div class="input-group">
+                  <div class="input-group-addon hidden-xs">M</div>
+                  <input class="form-control" type="number" ng-model="selectedMonth" min="1" max="12" placeholder="MM" ng-keypress="divine($event)">
+                </div>
+
+                <div class="input-group">
+                  <div class="input-group-addon hidden-xs">Y</div>
+                  <input class="form-control" type="number" ng-model="selectedYear" min="1944" max="{{ maxYear }}" placeholder="YYYY" ng-keypress="divine($event)">
+                </div>
+            </div>
+        </form>
+        <button class="btn btn-default btn-block" ng-click="divine()">Show my Signs</button>
+    </div>
+
+    <div class="alert alert-danger" role="alert" ng-show="invalidDate">The date you have entered is invalid, please try again.</div>
+
+  </div>
+</div>
+
+<!-- Divined Zodiac Icons -->
+<div class="row text-center current-container">
+
+      <div class="col-xs-6 col-sm-4 col-sm-offset-2" >
+      <!-- <div class="col-xs-6 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3" > -->
+        <h3>
+          Greek<span class="hidden-xs"></span>
+          <br class="visible-xs-inline">Zodiac
+        </h3>
+
+        <div class="text-center thumbnail">
+
+          <!-- Current Greek -->
+          <div class="thumbnail zodiac greek" ng-show="currentGreekZodiac">
+            <img class="img-responsive" ng-src="{{ currentGreekZodiac.icon }}" alt="{{ currentGreekZodiac.name }}">
+            <div class="caption">
+              <h4>{{ currentGreekZodiac.name }}</h4>
+              <h6>{{ currentGreekZodiac.subtitle }}</h6>
+              <p class="sign-paragraph">{{ currentGreekZodiac.description }}</p>
+            </div>
+          </div>
+
+          <!--  Placeholder Greek -->
+          <div class="thumbnail placeholder" ng-hide="currentGreekZodiac">
+            <img class="img-responsive" src="assets/images/greek-zodiac-wheel.png" alt="Greek Zodiac Placeholder">
+            <div class="caption">
+              <h4>?</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-xs-6 col-sm-4">
+      <!-- <div class="col-xs-6 col-sm-4 col-md-3"> -->
+
+        <h3>Chinese<span class="hidden-xs"></span>
+          <br class="visible-xs-inline">Zodiac
+        </h3>
+
+        <div class="text-center thumbnail">
+
+          <!-- Current Chinese -->
+          <div class="thumbnail zodiac chinese" ng-show="currentChineseZodiac">
+            <img class="img-responsive" ng-src="{{ currentChineseZodiac.icon }}" alt="{{ currentChineseZodiac.name }}">
+            <div class="caption">
+              <h4>{{ currentChineseZodiac.name }}</h4>
+              <h6>{{ currentChineseZodiac.subtitle }}</h6>
+              <p class="sign-paragraph">{{ currentChineseZodiac.description }}</p>
+            </div>
+          </div>
+
+          <!-- Placeholder Chinese -->
+          <div class="thumbnail placeholder" ng-hide="currentChineseZodiac">
+            <img class="img-responsive" src="assets/images/chinese-zodiac-wheel.png" alt="Chinese Zodiac Placeholder">
+            <div class="caption">
+              <h4>?</h4>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+</div>  

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Test</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js"></script>
+</head>
+<body>
+    <div id="main-body" ng-app="myApp">
+        <div id="main-controller" ng-controller="IndexController" class="container text-center" ng-class="angClass">
+            <div class="row">
+                <!-- <div class="col-xs-12"> -->
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <h1>Zodiac Demo</h1>
+                    <h4>This is a demo to showcase my AngularJS prowess, it's even mobile reponsive!</h4>
+                    <h5>Note: The information presented here are for light hearted fun, so take care not to take them too seriously.</h5>
+                    <div class="radio-holder">
+                        <a href="#/greek" class="btn btn-default radio-select-btn greek" ng-model="radioModel" btn-radio="'Greek Zodiac'">
+                          <img src="assets/images/greek-zodiac-wheel.png" >
+                          <h6>Greek<span class="hidden-xs"> </span><br class="visible-xs-inline">Zodiac</h6>
+                        </a>
+                        <a href="#/sign" class="btn btn-default radio-select-btn star" ng-model="radioModel" btn-radio="'My Sign'">
+                          <img src="assets/images/star.png" >
+                          <h6>What're<span class="hidden-xs"> </span><br class="visible-xs-inline">my Signs?</h6>
+                        </a>
+                        <a href="#/chinese" class="btn btn-default radio-select-btn chinese" ng-model="radioModel" btn-radio="'Chinese Zodiac'">
+                          <img src="assets/images/chinese-zodiac-wheel.png" >
+                          <h6>Chinese<span class="hidden-xs"> </span><br class="visible-xs-inline">Zodiac</h6>
+                        </a>
+                    </div>
+
+                    <div ng-view class="container-fluid"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="app/app.js" ></script>
+    <script src="app/indexController.js" ></script>
+
+    <script src="app/services/greekZodiac.js" ></script>
+    <script src="app/services/chineseZodiac.js" ></script>
+
+    <script src="app/shared/zodiacModalController.js" ></script>
+
+    <script src="app/components/sign/signController.js" ></script>
+    <script src="app/components/greek/greekController.js" ></script>
+    <script src="app/components/chinese/chineseController.js" ></script>
+
+</body>
+</html>

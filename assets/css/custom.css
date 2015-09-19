@@ -1,0 +1,219 @@
+/* Index shell */
+body{
+	background-image: url('../images/starry-sky-a.jpg');
+}
+
+#main-controller{
+	background-color: #f8f8f8;
+
+	max-width: 900px;
+
+	margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+
+    border-radius: 31px;
+    opacity: 0;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+
+	transition: opacity 2s linear 1s;
+	-webkit-transition: opacity 2s linear 1s;
+}
+#main-controller.moonlight{
+	opacity: 0.94;
+	filter: alpha(opacity=94); /* For IE8 and earlier */
+}
+
+/* Switching Views */
+.radio-holder{
+	margin-bottom: 20px;
+}
+
+.radio-select-btn{
+	padding: 6px;
+	border-width: 2px;
+
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.radio-select-btn.active, .radio-select-btn:active{
+	opacity: 1;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.radio-select-btn.active, .radio-select-btn.focus, .radio-select-btn:active, .radio-select-btn:focus, .radio-select-btn:hover{
+	background-color: #fff;
+	box-shadow: none;
+}
+.radio-select-btn.greek.active, .radio-select-btn.greek.focus, .radio-select-btn.greek:active, .radio-select-btn.greek:focus, .radio-select-btn.greek:hover{
+	border-color: #3820BF;
+}
+.radio-select-btn.star.active, .radio-select-btn.star.focus, .radio-select-btn.star:active, .radio-select-btn.star:focus, .radio-select-btn.star:hover{
+	border-color: #FFCB15;
+}
+.radio-select-btn.chinese.active, .radio-select-btn.chinese.focus, .radio-select-btn.chinese:active, .radio-select-btn.chinese:focus, .radio-select-btn.chinese:hover{
+	border-color: #FD2B2E;
+}
+
+/* xs */
+@media screen and (max-width: 767px){
+	#main-controller{
+		border-radius: 11px;
+	}
+	.radio-select-btn > img{
+		height: 75px;
+	}
+}
+/* sm */
+@media screen and (min-width: 768px){
+	.radio-select-btn > img{
+		height: 100px;
+	}
+}
+
+
+/* Sign, Greek and Chinese Views, Zodiac Icons */
+.thumbnail.zodiac{
+	margin-bottom: 0;
+}
+.thumbnail.zodiac img{
+	max-height: 62.5px;
+}
+.thumbnail.zodiac.greek img{
+	padding-top: 25px; 
+}
+.thumbnail.zodiac.chinese img{
+	padding-top: 5px; 
+}
+
+
+/* Sign View */
+
+/* Birthday Input Form */
+.sign-input{
+	max-width: 370px; 
+	margin: 0 auto;
+}
+.sign-input .form-group{
+	margin-bottom: 0;
+}
+.sign-input .input-group{
+	width: 32%;
+}
+.sign-input button{
+	margin: 5px auto; 
+}
+
+@media screen and (max-width: 767px){
+	.sign-input .input-group{
+		display: inline-block;
+	}
+	.sign-input .form-control[type="number"]{
+		border-radius: 4px;
+	}
+}
+
+/* Divined Zodiac Signs */
+.thumbnail.placeholder{
+	margin-bottom: 0;
+}
+.thumbnail.placeholder > img{
+	max-height: 150px;
+}
+
+	/*Ox, Horse
+	Libra, Gemini*/
+.sign-paragraph{
+	text-align: left;
+	overflow: auto;
+}
+
+/* xs */
+@media screen and (max-width: 767px){
+	.current-container{
+		height: 395px;
+	}
+	.current-container .thumbnail.zodiac{
+		/*height: 293px;*/
+		height: 283px;
+	}
+	.sign-paragraph{
+		height: 140px;
+	}
+}
+/* sm */
+@media screen and (min-width: 768px){
+	.current-container{
+		height: 409px;
+	}
+	.current-container .thumbnail.zodiac{
+		/*height: 333px;*/
+		height: 323px;
+	}
+	.sign-paragraph{
+		height: 160px;
+	}
+}
+/* lg */
+@media screen and (min-width: 1200px){
+	.current-container{
+		/*height: 389px;*/
+	}
+	.current-container .thumbnail.zodiac{
+		/*height: 313px;*/
+		/*height: 303px;*/
+	}
+	.sign-paragraph{
+		/*height: 120px;*/
+	}
+}
+
+
+/* Greek and Chinese Views */
+
+/* xs */
+@media screen and (max-width: 767px){
+	.greek-zodiac, .chinese-zodiac{
+		min-height: 503px;
+	}
+}
+/* sm */
+@media screen and (min-width: 768px){
+	.greek-zodiac, .chinese-zodiac{
+		margin-bottom: 46px;
+	}
+}
+
+/* Thumbnail buttons */
+.thumbnail[role="button"]{
+	border-width: 2px;
+}
+.thumbnail[role="button"]:hover{
+	text-decoration: none;
+}
+
+.greek-zodiac .thumbnail[role="button"]:hover{
+	border-color: #3820BF;
+}
+.chinese-zodiac .thumbnail[role="button"]:hover{
+	border-color: #FD2B2E;
+}
+
+/* Thumbnails, extra small */
+.zodiac-container-xs{
+	max-width: 600px; 
+	margin: 0 auto;
+}
+.thumbnail-container-xs{
+	display: inline-block
+}
+.thumbnail-container-xs .thumbnail[role="button"]{
+	width: 120px; 
+	margin-right: 10px;
+}
+
+
+/* Zodiac Modal View */
+.modal-image{
+	max-height: 150px;
+}
+

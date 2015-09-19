@@ -1,0 +1,32 @@
+<div id="greek" class="row greek-zodiac">
+  
+      <!-- Thumbnails, small to large -->
+      <div class="hidden-xs">
+        <div class="col-sm-3" ng-repeat="g in greekZodiac">
+        <!-- <div class="col-sm-3 col-md-2" ng-repeat="g in greekZodiac"> -->
+          <a class="text-center thumbnail" role="button" ng-click="open($index)">
+            <div class="thumbnail zodiac greek">
+              <img class="img-responsive" ng-src="{{ g.icon }}" alt="{{ g.name }}">
+              <div class="caption">
+                <h6>{{ g.name }}</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Thumbnails, extra small -->
+      <div class="visible-xs-block zodiac-container-xs">
+        <div class="thumbnail-container-xs" ng-repeat="g in greekZodiac">
+          <a class="text-center thumbnail" role="button" ng-click="open($index)">
+            <div class="thumbnail zodiac greek" >
+              <img class="img-responsive" ng-src="{{ g.icon }}" alt="{{ g.name }}">
+              <div class="caption">
+                <h6>{{ g.name }}</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+</div>
